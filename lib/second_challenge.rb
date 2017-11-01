@@ -5,9 +5,9 @@ def second_challenge
    meat: ["chicken", "steak", "salmon"],
    grains: ["rice", "pasta"]
   }
-
-  #code your solution here!
-
-  
-
+  full_list = []
+  groceries.values.flatten.each do |item|
+    full_list << item
+  end
+  full_list
 end
